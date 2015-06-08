@@ -1,0 +1,7 @@
+<div class="pure-u-1-1 footer-form">
+	{{ session:messages }}
+	{{ contact:form email="text|required|valid_email" button = "subscribe" template = "wearbox-email" sent = "Thank you for subscribing for updates" error = "Sorry. There was a problem. Please try again" }}
+	{{ email }}
+	{{ /contact:form }}
+</div>
+<!--<p class="footer-copyright">ALL RIGHTS RESERVED WEARBOX LIMITED &copy; {{helper:date format="Y"}}</p>-->
